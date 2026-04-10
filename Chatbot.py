@@ -2,7 +2,7 @@ import streamlit as st
 from openai import OpenAI
 
 # ------------------ CONFIG ------------------
-API_KEY = "GROQ_API_KEY"   # 🔴 put your Groq key here
+API_KEY = st.secrets["GROQ_API_KEY"]
 KB_FILE = "Me.txt"
 
 # ------------------ GROQ CLIENT ------------------
